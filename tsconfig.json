@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",                               
+    "module": "commonjs",                              
+    "esModuleInterop": true,                           
+    "forceConsistentCasingInFileNames": true,          
+    "strict": false,                                   
+    "skipLibCheck": true,
+    "outDir": "./dist",                                 // Carpeta donde se guardará el código JavaScript compilado
+    "rootDir": "./src",                                 // Carpeta de código fuente (TypeScript)
+    "resolveJsonModule": true,                          // Si usas archivos JSON
+    "moduleResolution": "node",                         // Usar la resolución de módulos de Node.js
+    "baseUrl": ".",                                     // Resuelve los módulos desde la raíz
+  },
+  "include": ["src/**/*.ts"],                            // Incluir todos los archivos .ts de la carpeta src
+  "exclude": ["node_modules"]                            // Excluir node_modules
+}

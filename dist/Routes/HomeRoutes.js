@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const HomeController_1 = require("../Controllers/HomeController");
+const router = (0, express_1.Router)();
+router.get('/getHomes', HomeController_1.getHomes);
+router.post('/createHome', HomeController_1.createHome);
+router.put('/updateHome/:id', HomeController_1.updateHome);
+router.delete('/deleteHome/:id', HomeController_1.deleteHome);
+exports.default = router;
